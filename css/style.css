@@ -1,0 +1,166 @@
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* displays */
+.d-flex{
+    display: flex;
+}
+
+/* positions */
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-fixed{
+    position: fixed;
+}
+.position-sticky{
+    position: sticky;
+}
+/* z-index */
+.z-1{
+    z-index: 1;
+}
+/* justifys content */
+.justify-content-around{
+    justify-content: space-around;
+}
+
+/* styles text */
+.list-style{
+list-style: none;
+}
+.text-decoration{
+    text-decoration: none;
+}
+
+/* colores */
+.blanco{
+    color: #FFFFFF;
+}
+
+.rojo{
+    color: #E2211C;
+}
+
+/* bolders */
+.fw-bold{
+    font-weight: bold;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+/* heights */
+.h-100vh{
+    height: 100vh;
+}
+.h-100{
+    height: 100%;
+}
+/* widths */
+.w-100{
+    width: 100%;
+}
+
+/* margins */
+.m-auto{
+    margin: auto;
+}
+
+.menu-bar{
+    max-height: 72px;
+}
+
+.logo{
+    left: 130px;
+    max-width: 247px;
+    max-height: 72px;
+}
+
+.menu{margin: auto;
+    top: 13px;
+    left: 884px;
+    max-width: 866px;
+    max-height: 46px;
+    gap: 50px;
+    
+}
+
+.menu ul{
+    gap: 60px;
+
+}
+
+.texto-menu{
+    line-height: 24px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+}
+.menu>ul>li:first-child a{
+    line-height: 24px;
+    -webkit-text-stroke: 1px #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #FFFFFF25;
+}
+
+.menu>ul>li:last-child a{
+    max-width: 174px;
+    background-color: #FF890A;
+    padding: 11px 24px 11px 24px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+}
+
+/* overlay del one-shoot */
+.overlay{
+    background-color: #99999985;
+    top: 0;
+    left: 0;
+}
+/* one shoot */
+.one-shoot{
+    background-image: url('../imgs/one-shoot-fondo.jpg');
+    max-height: 1110px;
+    max-width: 1943px;
+    height: 100vh;
+}
+
+@media(max-width: 1259px){
+    header{
+        height: 100%;
+    }
+    .logo{
+        position: absolute;
+        left: 90px;
+    }
+    .container-menu{
+        position: absolute;
+        top:0;
+        left: 50%;
+        bottom: 0;
+        background-color: #E2211C70;
+    }
+    .menu{
+        margin: 0;
+        /* display: none; */
+        max-width: fit-content;
+        flex-direction: column;
+        right: 50px;
+    }
+    .menu li a{
+        display: inline;
+    }
+}
