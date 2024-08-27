@@ -18,6 +18,12 @@
     src: url('../fonts/Fira_Sans/FiraSans-Italic.ttf');
 }
 
+@font-face {
+    font-family: 'Fira Sans Bold';
+    font-style: normal;
+    src: url('../fonts/Fira_Sans/FiraSans-Bold.ttf');
+}
+
 .Poppins-Bold{
     font-family: 'Poppins-Bold';
 }
@@ -130,7 +136,7 @@ nav{
 
 .logo{
     position: relative;
-    left: 130px;
+    left: 100px;
     max-width: 247px;
     max-height: 72px;
 }
@@ -190,8 +196,9 @@ nav{
 }
 
 .container-shoot{
+    flex-wrap: wrap;
     margin: auto;
-    margin-top: 160px;
+    margin-top: 90px;
     /* margin-left: 20%; */
 }
 
@@ -214,6 +221,8 @@ nav{
     text-shadow: 0px 4px 4px #00000025;
     line-height: 80px;
 }
+
+/* botones */
 .conatainer-buttons{
     gap:30px;
 }
@@ -237,25 +246,53 @@ nav{
 
 .container-shoot img{
     z-index: 1;
+    height: auto;
 }
 
-.overlay img{
-    top: 60%;
+.linea{
+    /* top: 68%; */
     bottom: 0%;
 }
 
-@media(max-width: 1284px){
+/* container-rojo  */
+.container-rojo{
+    font-weight: 800;
+    font-size: 36px;
+    background-color: #E2211C;
+    max-height: 269px;
+    height: 100vh;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container-rojo p{
+    font-family: 'Fira Sans Bold';
+}
+
+/* container productos */
+.container-productos p{
+    font-weight: 800;
+    font-family: 'Fira Sans Bold';
+    -webkit-text-stroke: 3px white;
+    text-shadow: 0px 4px 4px #00000025;
+
+    font-style: italic;
+}
+
+
+@media(max-width: 1314px){
     header{
-        height: 100%;
+        /* height: 100%; */
     }
     .menu-button{
         display: block;
     }
     .container-listado{
-        margin: 0;
+        margin: auto;
         position: absolute;
         height: 100vh;
-        width: 500px;
+        width: 300px;
         right: 0%;
         /* left: 60%; */
         background-color: #ff000085;
@@ -264,7 +301,7 @@ nav{
     }
     .mostrar{
     transition: all 0.5s ease-in;
-    right: -100%;
+    right: -170%;
     }
 
     .listado{
@@ -289,38 +326,109 @@ nav{
     }
 
     /* one-shoot */
-    .container-shoot{
-
-    }
     .container-shoot img{
         width: 50%;
-        height: 70%;
+        height: 50%;
     }
     .text-shoot p:nth-child(1){
         font-size: 44px;
-        text-shadow: 0px 4px 4px #00000025;
         line-height: 80px;
     }
 
     .text-shoot p:nth-child(2){
         font-size: 80px;
-        text-shadow: 0px 4px 4px #00000025;
         line-height: 80px;
     }
     .text-shoot p:nth-child(3){
         font-size: 64px;
-        text-shadow: 0px 4px 4px #00000025;
         line-height: 80px;
     }
     .text-shoot p:nth-child(4){
         font-size: 30px;
-        text-shadow: 0px 4px 4px #00000025;
         line-height: 80px;
+    }
+
+    .container-shoot img{
+        margin: auto;
+        width: 40%;
     }
 }
 
-@media(max-width: 805px){
-    .container-shoot{
-        flex-direction: column;
+@media(max-width: 845px){
+    .text-shoot{
+        margin: auto;
+    }
+    .text-shoot p:nth-child(1){
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .text-shoot p:nth-child(2){
+        font-size: 60px;
+        line-height: 40px;
+    }
+    .text-shoot p:nth-child(3){
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .text-shoot p:nth-child(4){
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .container-shoot img{
+        padding-top: 2%;
+        margin: auto;
+        width: 37%;
+    }
+    .container-rojo p{
+        font-size: 34px;
     }
 }
+@media(max-width: 544px){
+    .text-shoot p:nth-child(4){
+        font-size: 23px;
+        line-height: 60px;
+    }
+.conatainer-buttons a:first-child{
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 4px 8px 4px;
+}
+.conatainer-buttons a:last-child{
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 4px 8px 4px;
+}
+.one-shoot{
+    background-size: cover;
+}
+
+.container-shoot img{
+    width: 44%;
+}
+
+.container-rojo p{
+    font-size: 24px;
+}
+
+}
+@media(max-width: 399px){
+    .logo{
+        left: 25px;
+        right: 0;
+    }
+    
+.conatainer-buttons{
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+.container-shoot img{
+    background-size: contain;
+}
+
+
+}
+}
+
