@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/funciones.js"></script>
     <meta charset="UTF-8">
@@ -11,14 +8,14 @@
     <title>Limpieza A Fondo</title>
 </head>
 <body>
-    <header class="position-fixed z-1 w-100">
-        <nav class="d-flex w-100">
+    <header class="position-fixed z-2 w-100">
+        <nav class="d-flex w-100 h-100 z-2">
             <div class="logo">
             <img src="imgs/Logo-Essperta.png" alt="Logo">
             </div>
             <button class="menu-button" id="menu-button">☰ Menú</button>
-            <div class="container-listado m-auto w-100" id="container-listado">
-                <ul class="listado d-flex w-100">
+            <div class="container-listado m-auto w-100 " id="container-listado">
+                <ul class="listado d-flex w-100 ">
                     <li class="list-style fw-700"><a href="index.html" class="texto-listado text-decoration rojo">Inicio</a></li>
                     <li class="list-style fw-700" ><a href="espiral_inox.html" class="texto-listado text-decoration blanco">Espiral Inox</a></li>
                     <li class="list-style fw-700" ><a href="acerro_galvanizado.html" class="texto-listado text-decoration blanco">Acero galvnizado</a></li>
@@ -28,30 +25,32 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="one-shoot position-relative h-100 w-100">
-            <div class="overlay d-flex position-absolute h-100 w-100 text-center">
-                <div class="container-shoot d-flex">
-                    <div class="text-shoot rojo ">
-                        <p class="Fira_Sans fs-3 fw-800">PARA UNA</p>
-                        <p class="Fira_Sans fs-1 fw-800">LIMPIEZA </p>
-                        <p class="Fira_Sans fs-1 fw-800"> A FONDO</p>
-                        <p class="blanco fs-3 poppins-regular">Essperta &#174 fibras de acero.</p>
 
-                        <!-- botones -->
-                        <div class="conatainer-buttons d-flex">
-                            <a href="#" class="blanco text-decoration">
-                                VER TODOS LOS PRODUCTOS
-                            </a>
-                            <a href="#" class="blanco text-decoration">
-                                COMPRAR EN LÍNEA
-                            </a>
-                        </div>
-                    </div>
-                <img src="imgs/dona-de-acero.png" alt="">
-                </div>
-                <img class="linea position-absolute w-100" src="imgs/linea-curva.png" alt="">
+    <!-- seccion one-shoot  -->
+
+    <main>
+        <div class="one-shoot h-100 w-100">
+            <div class="overlay position-absolute h-100 w-100 ">
             </div>
+            <div class="container-shoot d-flex h-100">
+                <div class="text-shoot rojo ">
+                    <p class=" fs-3 fw-800">PARA UNA</p>
+                    <p class=" fs-1 fw-800">LIMPIEZA </p>
+                    <p class=" fs-1 fw-800"> A FONDO</p>
+                    <p class="blanco fs-3 poppins-regular">Essperta &#174 fibras de acero.</p>
+                    <!-- botones -->
+                    <div class="conatainer-buttons d-flex">
+                        <a href="#" class="blanco text-decoration">
+                            VER TODOS LOS PRODUCTOS
+                        </a>
+                        <a href="#" class="blanco text-decoration">
+                            COMPRAR EN LÍNEA
+                        </a>
+                    </div>
+                </div>
+            <img src="imgs/dona-de-acero.png" alt="">
+            </div>
+            <img class="linea position-absolute w-100" src="imgs/linea-curva.png" alt="">
         </div>
     </main>
 
@@ -67,10 +66,71 @@
     </section>
 <!-- seccion prodcutos -->
     <section>
-        <div class="container-productos">
+    <div class="container-productos d-flex">
+        <div class="container-tamano-productos">
             <p class="rojo text-center fs-2">NUESTROS PRODUCTOS</p>
+            <div class="productos d-flex">
+                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
+                    <p>Espiral Metálica <br> Stainless Steel</p>
+                    <div class="boton-producto">
+                        <a href="#">VER PRODUCTO</a>
+                    </div>
+                </article>
+                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
+                    <p>Espiral Metálica <br> Stainless Steel</p> 
+                    <div class="boton-producto">
+                        <a href="#">VER PRODUCTO</a>
+                    </div>
+                </article>
+                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
+                    <p>Espiral Metálica <br> Stainless Steel</p>
+                    <div class="boton-producto">
+                        <a href="#">VER PRODUCTO</a>
+                    </div>
+                </article>
+                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
+                    <p>Espiral Metálica <br> Stainless Steel</p>
+                    <div class="boton-producto">
+                        <a href="#">VER PRODUCTO</a>
+                    </div>
+                </article>
+                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
+                    <p>Espiral Metálica <br> Stainless Steel</p> 
+                    <div class="boton-producto">
+                        <a href="#">VER PRODUCTO</a>
+                    </div>
+                </article>
+            </div>
         </div>
+    </div>
     </section>
-    
+    <footer>
+        <div class="footer-top d-flex w-100">
+            <div>
+                <img class="logo-footer w-100" src="imgs/logo-footer.svg" alt="Logo">
+            </div>
+            <div class="d-flex">
+                <span class="fs-4 fw-bold">Conatáctanos</span>
+                <br>
+                <span>Tel:55 5795 1103</span>
+                <span>Email:essperta@jamed.com.mx</span>
+                <div class="d-flex w-100">
+                    <a href="#" class="icono"><a src="imgs/facebook.png" alt="#"></a>
+                    <a href="#" class="icono"><a src="imgs/instagram.png" alt="#"></a>
+                    <a href="#" class="icono"><a src="imgs/twitter.png" alt="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex w-100">
+            <div class="d-flex w-100">
+                <p>
+                    Copyright © ESSPERTA all rights reserved.
+                </p>
+                <p>
+                    Políticas de privacidad
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
