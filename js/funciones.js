@@ -1,12 +1,19 @@
 // alert("hola")
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-button');
-    const menu = document.getElementById('container-listado');
-    
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('mostrar');
-        menuToggle.classList.toggle('xcambio');
-    });
+  // Selecciona todos los botones del menú usando la clase
+  const menuToggles = document.querySelectorAll('.menu-button');
+  const menu = document.getElementById('container-listado');
+  const overlay = document.getElementById('overlay-nav');
+  
+  menuToggles.forEach(menuToggle => {
+      menuToggle.addEventListener('click', function() {
+          menu.classList.toggle('mostrar');
+          overlay.classList.toggle('mostrar');
+          menuToggles.forEach(btn => {
+              btn.classList.toggle('xcambio');
+          });
+      });
+  });
 });
 
 // Función para cambiar el color del fondo
