@@ -8,7 +8,7 @@
     <title>Limpieza A Fondo</title>
 </head>
 <body>
-    <header class=" position-fixed z-2 w-100" id="header">
+    <header class=" position-fixed z-3 w-100" id="header">
         <div class="contanier-header z-2 d-flex">
                 <a href="index.html">
                 <div class="logo">
@@ -121,30 +121,38 @@
     </header>
 
     <!-- seccion one-shoot  -->
-
     <main>
-        <div class="one-shoot h-100 w-100">
+        <div class="one-shoot w-100 position-relative">
             <div class="overlay position-absolute h-100 w-100 ">
             </div>
-            <div class="container-shoot d-flex h-100">
-                <div class="text-shoot rojo ">
-                    <p class=" fs-3 fw-800">PARA UNA</p>
-                    <p class=" fs-1 fw-800">LIMPIEZA </p>
-                    <p class=" fs-1 fw-800"> A FONDO</p>
-                    <p class="blanco fs-3 poppins-regular">Essperta &#174 fibras de acero.</p>
-                    <!-- botones -->
-                    <div class="conatainer-buttons d-flex">
-                        <a href="#" class="blanco text-decoration">
-                            VER TODOS LOS PRODUCTOS
-                        </a>
-                        <a href="#" class="blanco text-decoration">
-                            COMPRAR EN LÍNEA
-                        </a>
+                <div class="m-auto container-shoot h-100 ">
+                    <div class="d-flex h-100 m-auto conatainer-elementos">
+                        <div class="text-shoot rojo  w-100 ">
+                            <div class="letras-shoot">
+                            <p class=" fs-3 fw-800">PARA UNA</p>
+                            <p class=" fs-1 fw-800">LIMPIEZA </p>
+                            <p class=" fs-1 fw-800"> A FONDO</p>
+                            </div>
+                            <p class="blanco fs-3 poppins-regular">Essperta &#174 fibras de acero.</p>
+
+                            <!-- botones -->
+                            <div class="conatainer-buttons d-flex">
+                                <a href="#" class="blanco text-decoration">
+                                    VER TODOS LOS PRODUCTOS
+                                </a>
+                                <a href="#" class="blanco text-decoration">
+                                    COMPRAR EN LÍNEA
+                                </a>
+                            </div>
+                        </div>
+                        <div class="z-2">
+                            <img class="position-relative w-100" src="imgs/dona-de-acero.png" alt="">
+                        </div>
                     </div>
                 </div>
-            <img src="imgs/dona-de-acero.png" alt="">
-            </div>
-            <img class="linea position-absolute w-100" src="imgs/linea-curva.png" alt="">
+                <div class="position-relative">
+                    <img class="linea position-absolute w-100" src="imgs/linea-curva.png" alt="">
+                </div>
         </div>
     </main>
 
@@ -163,35 +171,70 @@
     <div class="container-productos d-flex">
         <div class="container-tamano-productos">
             <p class="rojo text-center fs-2">NUESTROS PRODUCTOS</p>
-            <div class="productos d-flex">
-                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
-                    <p>Espiral Metálica <br> Stainless Steel</p>
+            <div class="productos d-grid">
+                <article class="d-flex gap-20">
+                    <div class="d-flex my-30 flex-column h-100 justify-content-between">
+                    <a class="d-flex m-auto position-relative text-decoration-none flex-column text-center px-10 link-productos" href="paginas/profducto_1.html">
+                        <div class="m-left m-right">
+                            <img src="imgs/producto.jpg" alt="">
+                        </div>
+                    <p class="mb-25 text-center fw-700">ESPIRAL DE ACERO INOXIDABLE</p>
+                    </a>
                     <div class="boton-producto">
                         <a href="#">VER PRODUCTO</a>
                     </div>
+                    </div>
                 </article>
-                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
-                    <p>Espiral Metálica <br> Stainless Steel</p> 
+                <article class="d-flex gap-20">
+                    <div class="d-flex my-30 flex-column h-100 justify-content-between">
+                    <a class="d-flex m-auto position-relative text-decoration-none flex-column text-center px-10 link-productos" href="paginas/profducto_2.html">
+                        <div class="m-left m-right">
+                            <img src="imgs/dona-metalica.webp" alt="">
+                        </div>
+                    <p class="mb-25 text-center fw-700">DONA DE ACERO GALVANIZADO</p>
+                    </a>
+                    <div class="boton-producto">
+                        <a href="paginas/profducto_2.html">VER PRODUCTO</a>
+                    </div>
+                    </div>
+                </article>
+                <article class="d-flex gap-20">
+                    <div class="d-flex my-30 flex-column h-100 justify-content-between">
+                    <a class="d-flex m-auto position-relative text-decoration-none flex-column text-center px-10 link-productos" href="paginas/profducto_3.html">
+                        <div class="m-left m-right">
+                            <img src="imgs/dona-cobrizada.webp" alt="">
+                        </div>
+                    <p class="mb-25 text-center fw-700">DONA DE ACERO COBRIZADO</p>
+                    </a>
+                    <div class="boton-producto">
+                        <a href="paginas/profducto_3.html">VER PRODUCTO</a>
+                    </div>
+                    </div>
+                </article>
+                <article class="d-flex gap-20">
+                    <div class="d-flex my-30 flex-column h-100 justify-content-between">
+                    <a class="d-flex m-auto position-relative text-decoration-none flex-column text-center px-10 link-productos" href="paginas/profducto_4.html">
+                        <div class="m-left m-right">
+                            <img src="imgs/espiral_acero.webp" alt="">
+                        </div>
+                    <p class="mb-25 text-center fw-700">YAALI ESPIARAL DE ACERO INOXIDABLE</p>
+                    </a>
+                    <div class="boton-producto">
+                        <a href="paginas/profducto_4.html">VER PRODUCTO</a>
+                    </div>
+                    </div>
+                </article>
+                <article class="d-flex gap-20">
+                    <div class="d-flex my-30 flex-column h-100 justify-content-between">
+                    <a class="d-flex m-auto position-relative text-decoration-none flex-column text-center px-10 link-productos" href="paginas/profducto_5.html">
+                        <div class="m-left m-right">
+                            <img src="imgs/espirales-essperta.webp" alt="">
+                        </div>
+                    <p class="mb-25 text-center fw-700">3 PAQUETES DE 2 PIEZAS FIBRAS ESPIRAL METÁLICA</p>
+                    </a>
                     <div class="boton-producto">
                         <a href="#">VER PRODUCTO</a>
                     </div>
-                </article>
-                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
-                    <p>Espiral Metálica <br> Stainless Steel</p>
-                    <div class="boton-producto">
-                        <a href="#">VER PRODUCTO</a>
-                    </div>
-                </article>
-                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
-                    <p>Espiral Metálica <br> Stainless Steel</p>
-                    <div class="boton-producto">
-                        <a href="#">VER PRODUCTO</a>
-                    </div>
-                </article>
-                <article class="d-flex"><img src="imgs/producto.jpg" alt="">
-                    <p>Espiral Metálica <br> Stainless Steel</p> 
-                    <div class="boton-producto">
-                        <a href="#">VER PRODUCTO</a>
                     </div>
                 </article>
             </div>
