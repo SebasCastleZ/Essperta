@@ -119,22 +119,22 @@
         </div>
         </nav>
     </header>
+    <?php    
+    require('paginas/header.php');
+    ?>
 
     <!-- seccion one-shoot  -->
-    <main>
-        <div class="one-shoot w-100 position-relative">
-            <div class="overlay position-absolute h-100 w-100 ">
-            </div>
-                <div class="m-auto container-shoot h-100 ">
+    <main class="w-100 position-relative">
+        <div class="one-shoot w-100 position-relative d-flex flex-column m-auto">
+                <div class=" container-shoot h-100 d-flex ">
                     <div class="d-flex h-100 m-auto conatainer-elementos">
                         <div class="text-shoot rojo  w-100 ">
-                            <div class="letras-shoot">
-                            <p class=" fs-3 fw-800">PARA UNA</p>
-                            <p class=" fs-1 fw-800">LIMPIEZA </p>
-                            <p class=" fs-1 fw-800"> A FONDO</p>
+                            <div class="letras-shoot d-flex flex-column">
+                            <div class=" fs-3 fw-800">PARA UNA</div>
+                            <div class=" fs-1 fw-800">LIMPIEZA </div>
+                            <div class=" fs-1 fw-800"> A FONDO</div>
                             </div>
                             <p class="blanco fs-3 poppins-regular">Essperta &#174 fibras de acero.</p>
-
                             <!-- botones -->
                             <div class="conatainer-buttons d-flex">
                                 <a href="#" class="blanco text-decoration">
@@ -145,13 +145,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="z-2">
+                        <div class="imagen-dona z-2">
                             <img class="position-relative w-100" src="imgs/dona-de-acero.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="position-relative">
-                    <img class="linea position-absolute w-100" src="imgs/linea-curva.png" alt="">
                 </div>
         </div>
     </main>
@@ -241,27 +238,43 @@
         </div>
     </div>
     </section>
-    <footer>
-        <div class="footer-top d-flex w-100">
-            <div>
-                <img class="logo-footer w-100" src="imgs/logo-footer.svg" alt="Logo">
-            </div>
-            <div class="d-flex">
-                <span class="fs-4 fw-bold">Conatáctanos</span>
-                <br>
-                <span>Tel:55 5795 1103</span>
-                <span>Email:essperta@jamed.com.mx</span>
-                <div class="d-flex w-100">
-                    <a href="#" class="icono"><a src="imgs/facebook.png" alt="#"></a>
-                    <a href="#" class="icono"><a src="imgs/instagram.png" alt="#"></a>
-                    <a href="#" class="icono"><a src="imgs/twitter.png" alt="#"></a>
+
+    <!-- footer  -->
+    <footer class="position-relative w-100">
+        <div class="back-footer-top position-relative w-100">
+            <div class="footer-top d-flex w-100 position-relative m-auto flex-column">
+                <div class="d-flex gap-20 w-100 justify-content-between">
+                    <div class="logo-footer d-flex justify-content-start container-foot-top pb-20">
+                        <a href="index.html">
+                            <img class=" w-100" src="imgs/logo-footer.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="d-flex w-100 info-footer flex-column pb-20">
+                        <h3 class=" fs-3 fw-bold">Contáctanos</h3>
+                        <div class="text-end mb-25">
+                        <div>Tel:55 5795 1103</div>
+                        <div>Email:essperta@jamed.com.mx</div>
+                        </div>
+                        <div class="d-flex w-100 justify-content-end">
+                            <a href="#" class="icono mr-10">
+                                <img src="imgs/facebook.webp" class="w-100" alt="#">
+                            </a>
+                            <a href="#" class="icono mr-10">
+                                <img src="imgs/x.webp" class="w-100" alt="">
+                            </a>
+                            <a href="#" class="icono">
+                                <img src="imgs/instagram.webp"class="w-100" alt="">
+                            </a>
+                        </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="footer-bottom d-flex w-100">
             <div class="d-flex w-100">
                 <p>
-                    Copyright © ESSPERTA all rights reserved.
+                    
+                    © 2022 Soflyy. All rights reserved.
                 </p>
                 <p>
                     Políticas de privacidad

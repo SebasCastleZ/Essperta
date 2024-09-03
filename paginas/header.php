@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="../css/productos.css">
-    <script src="../js/funciones.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpieza A Fondo</title>
-</head>
-<body>
-    <header class=" position-fixed z-3 w-100" id="header">
+<header class=" position-fixed z-3 w-100" id="header">
         <div class="contanier-header z-2 d-flex">
-                <a href="../index.html">
+                <a href="index.html">
                 <div class="logo">
-                <img src="../imgs/Logo-Essperta.png" alt="Logo">
+                <img src="imgs/Logo-Essperta.png" alt="Logo">
                 </div>
                 </a>
             <div class="w-100 h-100 z-2">
@@ -119,99 +109,3 @@
         </div>
         </nav>
     </header>
-
-    <!-- seccion one-shoot  -->
-    <main class="w-100 position-relative">
-        <div class="one-shoot w-100 position-relative d-flex flex-column m-auto">
-                <div class=" container-shoot h-100 d-flex ">
-                    <div class="d-flex h-100 m-auto conatainer-elementos">
-                        <div class="text-shoot rojo  w-100 ">
-                            <div class="letras-shoot d-flex flex-column">
-                                <h1>ESPIRAL DE ACERO INOXIDABLE</h1>
-                            </div>
-                            <p class="blanco">
-                                Diseñadas con acero cobrizado de alto desempeño,
-                                entretejido para mayor resistencia a la fricción. Su recubrimiento
-                                cobrizado previene la oxidación y mantiene por más tiempo su dureza.</p>
-                            <!-- botones -->
-                            <div class="conatainer-buttons d-flex">
-                                <a href="#" class="blanco text-decoration">
-                                    VER TODOS LOS PRODUCTOS
-                                </a>
-                                <a href="#" class="blanco text-decoration">
-                                    COMPRAR EN LÍNEA
-                                </a>
-                            </div>
-                        </div>
-                        <div class="imagen-dona z-2">
-                            <img class="position-relative w-100" src="imgs/dona-de-acero.png" alt="">
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </main>
-
-    <!-- seccion roja -->
-    <section>
-        <div class="container-rojo d-flex m-auto">
-            <p class="blanco">
-                NUESTRAS FIBRAS DE ACERO ESSPERTA ESTÁN HECHAS <br>
-                CUIDADOSAMENTE PARA DARTE EL RENDIMNETO QUE <br>
-                NECESITAS EN TU COCINA.
-            </p>
-        </div>
-    </section>
-<!-- seccion prodcutos -->
-    <section>
-    <div class="container-productos d-flex">
-        <div class="container-tamano-productos">
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <!-- footer  -->
-    <footer class="position-relative w-100">
-        <div class="back-footer-top position-relative w-100">
-            <div class="footer-top d-flex w-100 position-relative m-auto flex-column">
-                <div class="d-flex gap-20 w-100 justify-content-between">
-                    <div class="logo-footer d-flex justify-content-start container-foot-top pb-20">
-                        <a href="index.html">
-                            <img class=" w-100" src="../imgs/logo-footer.svg" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="d-flex w-100 info-footer flex-column pb-20">
-                        <h3 class=" fs-3 fw-bold">Contáctanos</h3>
-                        <div class="text-end mb-25">
-                        <div>Tel:55 5795 1103</div>
-                        <div>Email:essperta@jamed.com.mx</div>
-                        </div>
-                        <div class="d-flex w-100 justify-content-end">
-                            <a href="#" class="icono mr-10">
-                                <img src="../imgs/facebook.webp" class="w-100" alt="#">
-                            </a>
-                            <a href="#" class="icono mr-10">
-                                <img src="../imgs/x.webp" class="w-100" alt="">
-                            </a>
-                            <a href="#" class="icono">
-                                <img src="../imgs/instagram.webp"class="w-100" alt="">
-                            </a>
-                        </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="footer-bottom d-flex w-100">
-            <div class="d-flex w-100">
-                <p>
-                    
-                    © 2022 Soflyy. All rights reserved.
-                </p>
-                <p>
-                    Políticas de privacidad
-                </p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
