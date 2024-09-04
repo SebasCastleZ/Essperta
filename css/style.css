@@ -26,6 +26,13 @@
     font-family: 'Fira sans';
 }
 
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+a{
+    cursor: pointer;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -131,6 +138,9 @@ list-style: none;
     color: var(--rojo);
 }
 
+.negro{
+    color: var(--negro);
+}
 /* bolders */
 .fw-bold{
     font-weight: bold;
@@ -239,7 +249,52 @@ list-style: none;
     justify-content: end;
 }
 
+                /*=========================================
+                =            Estilo del scroll            =
+                =========================================*/
 
+                /* width */
+                ::-webkit-scrollbar {
+                    width: 8px;
+                }
+
+                /* button */
+                ::-webkit-scrollbar-button {
+                    background: #E55000;
+                    display: none;
+                    width: 0;
+                }
+
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                    background: #E55000;
+                    border-radius: 8px;
+                }
+
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #FF8B22;
+                }
+
+                /* Track */
+                ::-webkit-scrollbar-track {
+                    background: #232426;
+                }
+
+                /* The track NOT covered by the handle. */
+                ::-webkit-scrollbar-track-piece {
+                    background: #000;
+                }
+
+                /* Corner */
+                ::-webkit-scrollbar-corner {
+                    background: #999;
+                }
+
+                /* Resizer */
+                ::-webkit-resizer {
+                    background: #111;
+                }
 
 /*  menu  */
 .contanier-header{
@@ -255,13 +310,13 @@ list-style: none;
 #menu-button{
     max-height: 20px;
     width: 20px;
+    z-index: auto;
     height: 20px;
 }
 .menu-button{
     top: 15px;
     right: 50px;
     display: none;
-    z-index: 1;
     background-image: url('../imgs/menu.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -388,6 +443,12 @@ list-style: none;
     bottom: 0;
     position: fixed;
     z-index: 1;
+}
+
+/* logo  */
+.logo img:hover{
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
 }
 
 /* one shoot */
@@ -576,6 +637,7 @@ main::after{
     margin-bottom: 50px;
 }
 .container-tamano-productos>p::before{
+    width: 100%;
     content: "NUESTROS PRODUCTOS";
     position: absolute;
     left: 50%;
@@ -710,7 +772,13 @@ justify-content: end;
     justify-content: space-between;
 }
 
-@media(max-width: 1314px){
+@media (max-width:1638px) {
+    .imagen-dona img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1390px){
     .texto-listado{
         margin: 0;
         text-align: start;
@@ -853,22 +921,26 @@ justify-content: end;
     }
 
     /* one-shoot */
-    .letras-shoot p:nth-child(1){
+    .letras-shoot div:nth-child(1){
         font-size: 44px;
-        line-height: 80px;
+        line-height: 60px;
     }
 
-    .letras-shoot p:nth-child(2){
+    .letras-shoot div:nth-child(2){
         font-size: 80px;
         line-height: 80px;
     }
-    .letras-shoot p:nth-child(3){
+    .letras-shoot div:nth-child(3){
         font-size: 64px;
         line-height: 80px;
     }
-    .text-shoot p:nth-child(4){
-        font-size: 30px;
-        line-height: 80px;
+
+    .text-shoot p {
+        margin-left: 0;
+    }
+
+    .conatainer-buttons{
+        margin-left: 0px;
     }
 
     .letras-shoot{
@@ -902,7 +974,7 @@ justify-content: end;
     }
     .text-shoot{
         text-align: center;
-        margin: auto;
+        width: 100%;
     }
     .conatainer-buttons a:first-child{
         font-size: 16px;
@@ -937,19 +1009,33 @@ justify-content: end;
     }
 
 }
-@media(max-width: 544px){
+
+@media(max-width: 580px){
+    .container-listado{
+        width: 100%;
+        z-index: 10;
+    }
+    
     .text-shoot{
         text-align: center;
-    }
-    .text-shoot p:nth-child(4){
-        font-size: 23px;
-        line-height: 60px;
     }
 
 .one-shoot{
     background-size: cover;
 }
+.letras-shoot div:nth-child(1){
+    font-size: 34px;
+    line-height: 40px;
+}
 
+.letras-shoot div:nth-child(2){
+    font-size: 50px;
+    line-height: 60px;
+}
+.letras-shoot div:nth-child(3){
+    font-size: 50px;
+    line-height: 60px;
+}
 
 .container-rojo p{
     font-size: 24px;
@@ -963,8 +1049,39 @@ justify-content: end;
     font-size: 18px;
 }
 
+.footer-top {
+    max-height: fit-content;
+    height: 100%;
+    align-items: center;
+}
+.footer-top>div {
+    align-items: center;
+    flex-direction: column;
+
+}
+.info-footer{
+    align-items: center;
+}
+
+
+
 }
 @media(max-width: 399px){
+
+    .text-shoot {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .letras-shoot{
+        align-items: center;
+    }
+    .letras-shoot{
+        margin: 0;
+    }
+
+
     .logo{
         left: 25px;
         right: 0;
@@ -974,10 +1091,6 @@ justify-content: end;
     align-items: center;
     /* flex-wrap: wrap; */
     flex-direction: column;
-}
-
-.container-shoot{
-    padding-top: 25%;
 }
 
 .letras-shoot div:nth-child(1){
@@ -997,29 +1110,41 @@ justify-content: end;
     font-size: 20px;
     line-height: 60px;
 }
+.text-shoot p {
+    font-size: 22px;
+}
 
+.imagen-dona{
+    width: 100%;
+    margin: auto;
+}
 footer{
     margin-top: 50px;
     
+}
+
+.info-footer div{
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-top{
     flex-direction: column;
     gap: 10px;
     padding-top: 30px;
-    margin-bottom: 50px;
 }
-
 .footer-bottom{
-    max-height:fit-content;
+    height: 100%;
+    max-height: 100%;
 }
 .footer-bottom div{
-    max-height:fit-content;
-
+    max-height:100%;
     text-align: center;
     flex-direction: column;
     height: 100%;
+    max-height: 100%;
 }
+
 .menu-button{
     right: 20px;
 }
