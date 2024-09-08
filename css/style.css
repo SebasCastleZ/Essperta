@@ -461,21 +461,12 @@ list-style: none;
 }
 .listado li a:hover{
     transition: all 300ms ease-in-out;
-    color: var(--rojo);
+    color: var(--rojo) !important;
 }
 .listado li:hover::before{
     transform-origin: center;
     transform: scaleX(1);
     transition: transform 600ms ease-in-out;
-}
-
-@keyframes anchura {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
 }
 
 /* overlay-nav */
