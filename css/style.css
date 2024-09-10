@@ -297,11 +297,6 @@ list-style: none;
                 }
 
 /*  menu  */
-
-.hidden{
-    top: -60px;
-}
-
 .contanier-header{
     max-width: 1640px;
     width: 100%;

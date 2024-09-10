@@ -47,23 +47,21 @@ function cambiarFondo() {
   }
   
   
-  //sticky 
-  // const stickyElement = document.querySelector('header');
-  // let lastScrollTop = 0;
 
-  // window.addEventListener('scroll', () => {
-  //   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-  //   if (currentScrollTop > lastScrollTop) {
-  //     // Scrolling down
-  //     stickyElement.style.top="-60px";
-  //   } else {
-  //     // Scrolling up
-  //     stickyElement.style.top="0px";
-  //   }
+  var scrollPos = 0;
+  
+function cambiarMenu(){
+  header = document.getElementById("header");
+    if ((document.body.getBoundingClientRect()).top > scrollPos)
+      header.style.top = "-1000px";
+    else
+      header.style.top = "-0px";
 
-  //   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
-  // });
-
-  //   // Escucha el evento scroll para ejecutar la función cuando el usuario se desplaza
-  //   window.addEventListener('scroll', cambiarFondo);
+      // ABAJO
+      console.log("down");
+    scrollPos = (document.body.getBoundingClientRect()).top;
+  };
+// cambio del estado de menu
+window.addEventListener('scroll',cambiarMenu);
+//llamado de funciones
+window.addEventListener('scroll', cambiarFondo);
