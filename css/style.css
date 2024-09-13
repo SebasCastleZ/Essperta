@@ -3,13 +3,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins/google-fonts-poppins-v21-latin-400-normal-1722909261.woff2');
 }
 
 @font-face {
     font-family: "Poppins-Bold";
     font-style: normal;
-    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    src: url('../fonts/Poppins/google-fonts-poppins-v21-latin-700-normal-1722909262.woff2');
 }
 
 @font-face {
@@ -295,10 +295,77 @@ list-style: none;
                 ::-webkit-resizer {
                     background: #111;
                 }
+/* boton scroll  */
+
+.boton-anclado{
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.boton-anclado button{
+    background-color: #ffffff61;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 1;
+    border: 0;
+    padding: 1px 3px 1px 3px;
+}
+
+.boton-anclado button>a{
+    z-index: 10;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker{
+    fill: var(--naranja);
+}
+
+
+.flecha{
+    top: 0;
+    bottom: 0;
+    z-index: 19;
+    width: 20px;
+    height: 20px;
+    fill: var(--blanco);
+}
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: 65px;
+    width: 65px;
+    background-color: #ffffff;
+    border-radius: 70%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
 
 /*  menu  */
 .contanier-header{
-    max-width: 1640px;
+    max-width: 1680px;
     width: 100%;
     margin: auto;
     height: 100%;
@@ -319,14 +386,14 @@ list-style: none;
     display: none;
     background-image: url('../imgs/menu.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .listado{
     margin-left: auto;
-    margin-right: 10px;
     max-width: fit-content;
-    gap: 50px;
+    gap: 24px;
 }
 
 .texto-listado{
@@ -488,6 +555,9 @@ list-style: none;
 /* one shoot */
 main{
     background-image: url('../imgs/one-shoot-fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .one-shoot{
@@ -806,54 +876,12 @@ justify-content: end;
     justify-content: space-between;
 }
 
-
-/* boton anclado  */
-
-.boton-anclado{
-    position: fixed;
-    bottom: 0;
-    width: 60px;
-    height: 60px;
-    z-index: 10;
-    right: 0;
-    bottom: 0;
-    margin: 20px;
-}
-
-.boton-anclado button{
-    background-color: #ffffff61;
-    align-items: center;
-    border-radius: 50%;
-    opacity: 1;
-    border: 0;
-    padding: 1px 3px 1px 3px;
-}
-
-.boton-anclado button>a{
-    z-index: 10;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.tracker{
-    fill: var(--naranja);
-}
-
-
-.flecha{
-    top: 0;
-    bottom: 0;
-    z-index: 19;
-    width: 20px;
-    height: 20px;
-    fill: var(--blanco);
-}
-
 @media (max-width:1638px) {
     .imagen-dona img {
         width: 100%;
+    }
+    .conatainer-elementos{
+        margin-left: 80px;
     }
 }
 
@@ -1048,6 +1076,7 @@ justify-content: end;
 
 @media(max-width: 1050px){
     .conatainer-elementos{
+        margin-left: 0px;
         margin: auto;
         flex-direction: column;
     }

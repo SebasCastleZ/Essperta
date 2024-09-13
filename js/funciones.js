@@ -53,14 +53,36 @@ function cambiarFondo() {
 function cambiarMenu(){
   header = document.getElementById("header");
     if ((document.body.getBoundingClientRect()).top > scrollPos)
-      header.style.top = "-1000px";
+      header.style.top = "0px";
     else
-      header.style.top = "-0px";
-
-      // ABAJO
-      console.log("down");
+    header.style.top = "-120px";
     scrollPos = (document.body.getBoundingClientRect()).top;
   };
+
+
+  //funcion progress bar scroll
+
+  let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+      scrollProgress.style.display = "grid";
+    } else {
+      scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+      document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#e2211c  ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  };
+  
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
 // cambio del estado de menu
 window.addEventListener('scroll',cambiarMenu);
 //llamado de funciones

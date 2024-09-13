@@ -566,6 +566,71 @@ list-style: none;
         backface-visibility: hidden;
 } */
 
+/* boton progress scroll */
+.boton-anclado{
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.boton-anclado button{
+    background-color: #ffffff61;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 1;
+    border: 0;
+    padding: 1px 3px 1px 3px;
+}
+
+.boton-anclado button>a{
+    z-index: 10;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker{
+    fill: var(--naranja);
+}
+
+.flecha{
+    top: 0;
+    bottom: 0;
+    z-index: 19;
+    width: 20px;
+    height: 20px;
+    fill: var(--blanco);
+}
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: 65px;
+    width: 65px;
+    background-color: #ffffff;
+    border-radius: 70%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
 /* one shoot */
 main{
     background-image: url('../imgs/one-shoot-fondo.jpg');
